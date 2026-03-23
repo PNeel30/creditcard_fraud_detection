@@ -1,25 +1,123 @@
-# 💳 Credit Card Fraud Detection App
+# 💳 Credit Card Fraud Detection System
 
-This is a Streamlit-based web application that detects fraudulent credit card transactions using a Logistic Regression model. Users can either upload a batch of transaction data or enter details manually to get instant predictions.
-
----
-
-## 🚀 Features
-
-- ✅ *Batch Prediction* via CSV upload
-- ✍ *Manual Input* of transaction data
-- 📊 *Prediction summary* with counts and visualizations
-- 🧁 *Interactive pie chart* of transaction types (Fraud/Normal)
-- 💰 *Total amount analysis* per transaction type
-- 📥 *Downloadable prediction results*
+A machine learning-based system designed to detect fraudulent credit card transactions. This project analyzes transaction data and predicts whether a transaction is legitimate or fraudulent.
 
 ---
 
-## 📁 Dataset
+## ✨ Key Features
 
-The app uses the [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) which contains:
+- 🔍 Fraud detection using ML models
+- 📊 Data preprocessing & feature engineering
+- ⚖️ Handles imbalanced datasets
+- 📈 Model training and evaluation
+- 🧠 Predictive analytics
 
-- *284,807 transactions* from two days in September 2013
-- Features V1 to V28 (PCA-transformed)
-- Time, Amount, and Class columns
-- Class = 1 → Fraudulent | Class = 0 → Normal
+---
+
+## 🏗️ Architecture
+
+```
+Raw Data → Preprocessing → Feature Engineering → Model Training → Prediction → Output
+```
+
+---
+
+## 📂 Project Structure
+
+```
+creditcard_fraud_detection/
+│
+├── data/                  # Dataset files
+├── notebooks/             # Jupyter notebooks (EDA & training)
+├── model/                 # Saved ML models
+├── main.py                # Main execution script
+├── requirements.txt       # Dependencies
+└── README.md              # Documentation
+```
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.8+
+- Basic knowledge of Machine Learning
+
+---
+
+## 📁 Setup Instructions
+
+### 1️⃣ Clone Repository
+```bash
+git clone <your-repo-link>
+cd creditcard_fraud_detection
+```
+
+### 2️⃣ Create Virtual Environment
+```bash
+python -m venv .venv
+
+# Activate (Windows)
+.\.venv\Scripts\activate
+
+# Activate (Mac/Linux)
+source .venv/bin/activate
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+```
+
+---
+
+## 📊 Model Details
+
+- Algorithms used:
+  - Logistic Regression
+  - Random Forest
+  - (Optional) XGBoost / SVM
+
+- Evaluation Metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - ROC-AUC
+
+---
+
+## 🛠️ Technology Stack
+
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib / Seaborn
+
+---
+
+## 🎯 Key Concepts
+
+- Classification problem
+- Imbalanced dataset handling (SMOTE / undersampling)
+- Feature scaling
+- Model evaluation
+
+---
+
+## 🚀 Future Improvements
+
+- Real-time fraud detection API
+- Deployment using Flask/FastAPI
+- Dashboard for monitoring transactions
+- Deep learning models
+
+
